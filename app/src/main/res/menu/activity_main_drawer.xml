@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/planets"
+            android:icon="@android:drawable/checkbox_off_background"
+            android:title="Planets" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/checkbox_off_background"
+            android:title="Continents" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/checkbox_off_background"
+            android:title="Countries" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@android:drawable/checkbox_off_background"
+            android:title="Cities" />
+    </group>
+
+    <item android:title="Communicate ::">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share App" />
+            <item
+                android:id="@+id/question"
+                android:icon="@android:drawable/sym_action_chat"
+                android:title="Demand Geo Wiki" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Mail / Feedback" />
+
+        </menu>
+    </item>
+
+</menu>

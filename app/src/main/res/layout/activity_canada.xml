@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.techlad.geo.Canada">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/rl1">
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="CANADA"
+            android:ellipsize="marquee"
+            android:id="@+id/button10"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toEndOf="@+id/imageView1"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@android:color/holo_green_dark" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="6dip"
+            android:contentDescription="TODO"
+            android:src="@drawable/c"
+            android:id="@+id/imageView1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toEndOf="@+id/rl1"
+        android:layout_below="@+id/rl1"
+        android:id="@+id/relativeLayout"
+        android:focusable="false">
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:id="@+id/imageView10"
+            android:src="@drawable/canada"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/canada_info"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/imageView10"
+            android:layout_toStartOf="@+id/imageView10"
+            android:gravity="center_vertical"
+            android:textColor="#b71c1c" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:id="@+id/scrollView2"
+            android:layout_below="@+id/imageView10"
+            android:fillViewport="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/canada"
+                android:id="@+id/textView2"
+                android:gravity="top|left"
+                android:layout_below="@+id/imageView10"
+                android:layout_alignParentStart="true"
+                android:scrollIndicators="right"
+                android:textColor="@color/abc_primary_text_disable_only_material_light"
+                android:textStyle="normal" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:padding="5dp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/relativeLayout2">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy Wiki"
+            android:textColor="#ffffff"
+            android:id="@+id/button12"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/material_deep_teal_500" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share "
+            android:textColor="#ffffff"
+            android:id="@+id/button11"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_blue_dark" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
